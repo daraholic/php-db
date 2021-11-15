@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px auto;
+}
+
+.body {
+    text-align: center;
+    font-style: 16px;
+    font-weight: 600;
+}
+
+nav {
+    background-color: antiquewhite;
+    color: chocolate;
+    padding: 10px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    background: black;
+    color: #ddd;
+    text-align: center;
+    width: 100%;
+}
+
+#regForm input {
+    border: 0;
+}
+
+#regForm input {
+    font-size: 16px;
+    padding: 5px 2px;
+    border-bottom: 1px solid #999;
+}
+/* 只會用一次的話 可以指定次屬性 */
+#regForm input[type='submit']{
+    border: 1px solid #555;
+    
+
+}

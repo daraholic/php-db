@@ -12,16 +12,13 @@
 
 <body> 
     <?php include "header.html";?>
-    <nav>
-        <a href="file01.php">file01.php</a>
-        <a href="file02.php">file02.php</a>
-        <a href="file03.php">file03.php</a>
-    </nav>
+    <?php include "nav.php";?>
+    
     <div class="body">
         file 01內容
     </div>
-    <footer>110php設計班
-    </footer>
+    <?php include "footer.html";?>
+    
 </body>
 
 </html>
