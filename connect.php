@@ -16,6 +16,7 @@ $range=(isset($_GET['id']))?$_GET['id']:10;
 // students是放在myphpadmin裡的一個sql資料表
 $sql="select * from `students` where  `id`<$range ";
 $rows=$pdo->query($sql)->fetchAll();
+// rows 二維陣列
 // 送到資料庫之後全部取回
 
 
