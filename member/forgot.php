@@ -12,7 +12,7 @@
     <?php include "./include/nav.php";?>
     <?php include "./include/side_bar.php";?>
     <div class="content">
-    會員中心
+    忘記密碼
 
     </div>
 

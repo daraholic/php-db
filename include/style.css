@@ -11,7 +11,7 @@ header {
 
 .body {
     text-align: center;
-    font-style: 16px;
+    font-style: 45px;
     font-weight: 600;
 }
 
@@ -27,11 +27,12 @@ nav a {
     margin: 0 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 0 5px;
 }
 footer {
     position: fixed;
     bottom: 0px;
-    height: 30px;
+    height: 100px;
     background: black;
     color: #ddd;
     text-align: center;

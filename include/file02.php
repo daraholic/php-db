@@ -10,9 +10,11 @@
 </head>
 
 <body>
-<?php include "header.html"; ?>
+    <?php include "header.html"; ?>
     
     <?php
+    // isset()判斷變數是否存在
+    // 'do' 想做什麼事的意思 取一個變數暫代 可能是做save可能是做select
     if(isset($_GET['do'])){
         include "nav.php"; 
     }
@@ -22,7 +24,7 @@
         file02的內容
 
     </div>
-    <?php include "footer.html";?>
+    <?php include "footer.php"; ?>
 </body>
 
 </html>

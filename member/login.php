@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入</title>
-    <link rel="stylesheet" href="./style.css">
+    <?php include "./include/head.php";?>
 </head>
 <body>
-    <?php include "./include/head.php";?>
     <?php include "./include/header.php";?>
     <?php include "./include/nav.php";?>
-    <?php include "./include/siderbar.php";?>
+    <?php include "./include/side_bar.php";?>
     <div class="content">
     <form action="./api/check_login.php" method="post">
     <table id="loginForm">
@@ -34,18 +33,7 @@
             </td>
             
         </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
+        
     </table>
     </form>
         

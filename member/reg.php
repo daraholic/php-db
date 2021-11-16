@@ -10,7 +10,7 @@
 <body>
     <?php include "./include/header.php";?>
     <?php include "./include/nav.php";?>
-    <?php include "./include/siderbar.php";?>
+    <?php include "./include/side_bar.php";?>
     <div class="content">
         <!--快速鍵 form:post[action="./api/reg.php"] 按一下tab -->
         <form action="./api/reg.php" method="post" id="regForm">
@@ -31,19 +31,19 @@
                 </tr>
                 <tr>
                     <td>姓名:</td>
-                    <td><input type="text" name="name"></td>
+                    <td><input type="text" name="name" id=""></td>
                 </tr>
                 <tr>
                     <td>電話:</td>
-                    <td><input type="text" name="mobile"></td>
+                    <td><input type="text" name="mobile" id=""></td>
                 </tr>
                 <tr>
                     <td>地址:</td>
-                    <td><input type="text" name="address"></td>
+                    <td><input type="text" name="address" id=""></td>
                 </tr>
                 <tr>
                     <td>生日:</td>
-                    <td><input type="date" name="birthday"></td>
+                    <td><input type="date" name="birthday" id=""></td>
                 </tr>
             </table>
             <div><input type="submit" value="確認送出"></div>

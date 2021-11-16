@@ -17,7 +17,7 @@
     <div class="body">
         file 01內容
     </div>
-    <?php include "footer.html";?>
+    <?php include "footer.php";?>
     
 </body>
 

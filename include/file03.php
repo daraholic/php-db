@@ -10,13 +10,12 @@
 </head>
 
 <body>
-    <?php include "header.html";?>
-    <?php include "nav.php";?>
-    <?php include "footer.html";?>
+    <?php include "header.html"; ?>
+    <?php include "nav.php"; ?>
     <div class="body">
         file 03內容
     </div>
-    
+    <?php include "footer.php"; ?>
 </body>
 
 </html>
