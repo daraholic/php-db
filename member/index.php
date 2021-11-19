@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +37,19 @@
             echo "帳號或密碼錯誤，請重新登入";
         }
         ?>
-        <a href="reg.php"><button>註冊新會員</button></a>
-        <a href="login.php"><button>登入</button></a>
+
+        <?php
+        if(isset($_SESSION['user'])){
+        ?>
+        <a href="content.php?action=dashdoard"><button>會員中心</button></a>
+        <?php
+        }else{
+        ?>  
+        <a href="content.php"><button>註冊新會員</button></a>
+        <a href="content.php"><button>登入</button></a>
+        <?php
+        }
+        ?>
     </nav>
 </body>
 </html>

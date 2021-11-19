@@ -1,3 +1,15 @@
+<?php
+// session_start只要放一次就好
+session_start();
+
+if(!isset($_SESSION['user'])){
+    // 導回首頁
+    header("location:index.php");
+    // echo "非法登入";
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +24,11 @@
     <?php include "./include/nav.php";?>
     <?php include "./include/side_bar.php";?>
     <div class="content">
-    會員中心
+    <h3>會員中心</h3>
 
+    <?php include "./fontend/dashboard.php";?>
+    
     </div>
-
 
     <?php include "./include/footer.php";?>
 </body>

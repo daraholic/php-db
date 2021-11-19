@@ -1,10 +1,15 @@
 <?php
+session_start();
+
 // $account=$_POST['account'];
 // $password=$_POST['password'];
 // 用{}框起來就是獨立的陣列
 // $sql="SELECT * FROM `account` WHERE `account`='{$_POST['account']}' && `password`='{$_POST['password']}'";
 
+
+
 // count解
+// 從資料庫拉來兩個值
 $sql="SELECT count(*) FROM `account` WHERE `account`='{$_POST['account']}' && `password`='{$_POST['password']}'";
 
 // SELECT * FROM `account` WHERE `account`='$_POST['account']' && `password`='$_POST['password']'
@@ -17,13 +22,16 @@ $pdo=new PDO($dsn,'root','');
 // fetch只拿一筆資料
 // fetchAll 二維陣列
 // fetchColumn 只取一個欄位
-$result=$pdo->quary($sql)->fetchColumn();
+$result=$pdo->query($sql)->fetchColumn();
 
 // 可以印出來看看
 // echo $result['account'];
 // echo $result['password'];
 if($result>0){
-    header("location:../dashboard.php");
+    $_SESSION['user']=$_POST['account'];
+    header("location:../dashboard.php?user=".$_POST['account']);
+    // 網址?參數
+    // header("location:../dashboard.php");
 }else{
     header('location:../index.php?err=1');
 }
